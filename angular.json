@@ -17,6 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "baseHref": "/plants/",
             "outputPath": "dist/plant-project",
             "index": "src/index.html",
             "browser": "src/main.ts",
