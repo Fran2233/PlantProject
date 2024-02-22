@@ -1,10 +1,48 @@
-<!-- <p-galleria [(value)]="images" [responsiveOptions]="responsiveOptions" [containerStyle]="{ 'max-width': '640px' }" [numVisible]="5">
-    <ng-template pTemplate="item" let-item>
-        <img [src]="item.itemImageSrc" style="width: 100%;" />
-    </ng-template>
-    <ng-template pTemplate="thumbnail" let-item>
-        <div class="grid grid-nogutter justify-content-center">
-            <img [src]="item.thumbnailImageSrc" />
-        </div>
-    </ng-template>
-</p-galleria> -->
+<div class="container">
+  <section class="container__header--mobile">
+    <mat-icon>menu</mat-icon>
+  </section>
+  <section class="container__header">
+    <div class="header__carrousel">
+      <swiper-container class="carrousel__container" slides-per-view="1" autoplay="true" direction="vertical"
+        loop="true" effect="fade">
+        <swiper-slide data-swiper-autoplay="5000">
+          <img src="assets/img/background1.jpg" alt="">
+        </swiper-slide>
+        <swiper-slide data-swiper-autoplay="5000">
+          <img src="assets/img/background2.jpg" alt="">
+        </swiper-slide>
+        <swiper-slide data-swiper-autoplay="5000">
+          <img src="assets/img/background3.jpg" alt="">
+        </swiper-slide>
+      </swiper-container>
+    </div>
+    <div class="header__tittle">
+      <h1>Garden Planet</h1>
+    </div>
+    <div class="header__links">
+      <a href="">TEST</a>
+      <a href="">TEST</a>
+      <a href="">TEST</a>
+      <a href="">TEST</a>
+      <a href="">TEST</a>
+    </div>
+  </section>
+  <section class="container__body">
+    <div class="body__info">
+      <h2 class="info__title--offer">SALE UP TO 30% OFF</h2>
+      <h2 class="info__title">
+        Plants
+        <span class="title__span"> made easy</span>
+      </h2>
+      <div class="title__description">
+        Patch helps you discover the best plants for your space, delivers them
+        <br>
+        to your door and helps you look after them.
+      </div>
+    </div>
+  </section>
+  <section class="container__footer">
+   <app-sidebar/>
+  </section>
+</div>

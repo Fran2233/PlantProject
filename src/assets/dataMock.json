@@ -1,0 +1,32 @@
+{
+    "plants": [
+        {
+            "name": "Potus",
+            "completeName": "Epipremnum aureum",
+            "weather": "Calido",
+            "description": "Es una liana que puede alcanzar 20 m de alto, con tallos de hasta 4 cm de diámetro. Trepa mediante raíces aéreas que se enganchan a las ramas de los árboles. Las hojas son perennes, alternas y acorazonadas, enteras en las plantas jóvenes, pero irregularmente pinnadas en las maduras y de hasta 1 m de largo por 45 cm de ancho (en las plantas jóvenes no superan los 20 cm de largo). Esta planta florece muy raramente, ya sea en la naturaleza o cultivada, debido a que no sintetiza la fitohormona giberelina, produciéndose la floración si se suministra de manera artificial.La última floración observada de manera natural se produjo en Singapur en 1964.",
+            "img": [
+                "assets/img/potus/potus.webp",
+                "assets/img/potus/potus1.jpg",
+                "assets/img/potus/potus2.jpg",
+                "assets/img/potus/potus3.webp",
+                "assets/img/potus/potus4.jpg"
+            ],
+            "category": "interior"
+        },
+        {
+            "name": "Ficus",
+            "completeName": "Epipremnum aureum",
+            "weather": "Calido",
+            "description": "Una de las características de las especies de este género es la secreción lechosa llamada látex que segregan al cortar o herir cualquier parte de la planta. Pero el más característico es el tipo muy particular de inflorescencia que se parece más a un fruto que a unas flores habituales. Otra característica importante del género reside en que las yemas terminales de las hojas están encerradas dentro de un par de estípulas soldadas en un principio y luego caducas.",
+            "img": [
+                "assets/img/potus/potus.webp",
+                "assets/img/potus/potus1.jpg",
+                "assets/img/potus/potus2.jpg",
+                "assets/img/potus/potus3.webp",
+                "assets/img/potus/potus4.jpg"
+            ],
+            "category": "interior"
+        }
+    ]
+}

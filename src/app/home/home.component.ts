@@ -1,56 +1,34 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
-import { GalleriaModule } from 'primeng/galleria';
-import { DataMockService } from '../service/data-mock.service';
-import { HttpClientModule } from '@angular/common/http';
-
+import { CUSTOM_ELEMENTS_SCHEMA, Component, OnInit } from '@angular/core';
+import { register } from 'swiper/element/bundle';
+import { MatIconModule } from '@angular/material/icon';
+import { SidebarModule } from 'primeng/sidebar';
+import { ButtonModule } from 'primeng/button';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [GalleriaModule,CommonModule,HttpClientModule],
+  imports: [CommonModule,MatIconModule,SidebarModule,ButtonModule],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  styleUrl: './home.component.scss',
+  providers : [
+  ],
+  schemas : [
+    CUSTOM_ELEMENTS_SCHEMA
+  ]
 })
 export class HomeComponent implements OnInit {
-  images: any[] | undefined;
+  sidebarVisible: boolean = false;
 
-  responsiveOptions: any[] | undefined;
-
-  constructor(private dataMockService:DataMockService) {
-
+  constructor() {
+    register();
   }
-
 
 
   ngOnInit(): void {
-    // this.photoService.getImages().then((images) => (this.images = images));
-    // this.responsiveOptions = [
-    //   {
-    //     breakpoint: '1024px',
-    //     numVisible: 5
-    //   },
-    //   {
-    //     breakpoint: '768px',
-    //     numVisible: 3
-    //   },
-    //   {
-    //     breakpoint: '560px',
-    //     numVisible: 1
-    //   }
-    // ];
 
-    this.dataMockService.getPlants()
-    .subscribe({
-      next : res => {
-        console.log('Funciona? ',res);
-        
-      },
-      error : err => {
-        console.log('Error',err);
-        
-      }
-    })
+
   }
+
+
 }
-
-
+  
